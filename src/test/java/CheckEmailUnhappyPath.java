@@ -10,7 +10,7 @@ public class CheckEmailUnhappyPath {
     }
 
     @Test(dataProvider = "ListOfEmails")
-    public void testEmailArray(String emails) {
+    public void testEmails(String emails) {
         Assert.assertFalse(Email.isEmailCorrect(emails));
     }
 }
