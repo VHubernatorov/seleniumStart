@@ -11,6 +11,6 @@ public class CheckEmailUnhappyPath {
 
     @Test(dataProvider = "ListOfEmails")
     public void testEmails(String emails) {
-        Assert.assertFalse(Email.isEmailCorrect(emails));
+        Assert.assertFalse(Email.isEmailCorrect(emails), "Checking UnValid e-mails");
     }
 }

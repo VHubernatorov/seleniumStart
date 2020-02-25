@@ -12,6 +12,6 @@ public class CheckEmailHappyPath {
 
     @Test(dataProvider = "ListOfEmails")
     public void checkEmails(String emails) {
-        Assert.assertTrue(Email.isEmailCorrect(emails));
+        Assert.assertTrue(Email.isEmailCorrect(emails), "Checking Valid e-mails");
     }
 }
