@@ -8,12 +8,11 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class checkButtonsOnFormProject {
+public class CheckButtonsOnFormProject {
     ChromeDriver driver;
 
     @BeforeClass
     public void addingWebDriver() {
-        System.setProperty("webdriver.chrome.driver", "/Users/Lexx/chromedriv/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://formy-project.herokuapp.com/buttons#");
     }
