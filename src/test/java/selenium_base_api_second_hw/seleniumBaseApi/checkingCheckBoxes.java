@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class checkingCheckBoxes {
+public class CheckingCheckBoxes {
     ChromeDriver driver;
 
     @DataProvider(name = "ListOfCSSSelector")
@@ -24,7 +24,6 @@ public class checkingCheckBoxes {
 
     @BeforeClass
     public void addingWebDriver() {
-        System.setProperty("webdriver.chrome.driver", "/Users/Lexx/chromedriv/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://formy-project.herokuapp.com/checkbox");
     }
